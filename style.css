@@ -1,0 +1,104 @@
+/*
+
+Theme Name: 	bh circle
+
+Description: 	A child theme for Twenty Twelve
+
+Author: 	Brian Hamburg
+
+Author URI: 	http://brianhamburg.com
+
+Template:       twentytwelve  
+
+Version: 	2.1
+
+*/
+
+
+@import url(../twentytwelve/style.css);
+
+/* Header */
+
+.logo-link {float: left; opacity: .8; transition: all 500ms;}
+.logo-link:hover {float: left;  opacity: 1}
+
+h1 {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+hgroup {margin: 15px 0 45px;}
+
+.site-header h1, .site-header h2 {margin-left: 80px; clear: none; line-height: 1.4em;}
+
+.site-header h1 {font-size: 2em;}
+
+.site-header h2 {font-size: 1em;}
+
+.entry-header .entry-title {font-weight: bold;}
+
+/* body */
+
+textarea {width: 100%;}
+
+a {color: #505050 !important; opacity: .8; transition: all 500ms;}
+a:hover {color: #292b2b !important; opacity: 1}
+
+ul.social {display: block; float: right; margin-top: 25px}
+
+ul.social li {list-style-type: none; float: left;}
+
+ul.social a {text-decoration: none; border-radius: 50%; font-size: 2em;}
+
+/* Footer */
+
+.site-info a {float: right;}
+
+/* Maximum width of 599 pixels. */
+@media screen and (max-width: 599px) {
+
+	.logo-link {opacity: 1;}
+
+    .menu-toggle {float: right; top: 25px; right: 20px; position: absolute; border-radius: 50%; font-size: 2em; line-height: 1.6em; height: 58px; width: 58px; box-sizing: border-box;}
+
+	.main-navigation ul {clear: both; display: block; margin-top:15px; width: 100%;}
+
+	.main-navigation li {display: block;margin: 0;}
+	
+	.main-navigation li:first-child {border-top: 1px solid #ededed;}	
+
+	.main-navigation li a {text-decoration: none; display: block; font-size: 1.8em; text-transform: uppercase; border-bottom: 1px solid #ededed; padding: 5px;}
+
+	.main-navigation li a:hover, .main-navigation li a:active {background: #efefef;}
+
+    
+    hgroup {margin-top: 0;}
+    
+    .site-title {display:none;}
+    
+    .site-description {display:none;}
+    
+	.site-info a {float: none;}
+
+	ul.social {display: none}
+}
+
+/* Minimum width of 960 pixels. */
+@media screen and (min-width: 960px) {
+	
+	ul.social {display: block}
+
+	body {
+
+		background-color: #000;
+	
+		background-size: 100% 100%;
+
+		background-position: fixed;
+    	}
+    
+   	 #page {background: rgba(255,255,255,0.97);}
+
+	.two-col {width: 50%; float: left;}
+    
+}
